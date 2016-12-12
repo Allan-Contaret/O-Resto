@@ -25,5 +25,7 @@ class RestaurantTableViewCell: UITableViewCell {
     func updateUI(){
         restaurantImageView.image = UIImage(named: restaurant.imageName)
         restaurantNameLabel.text = restaurant.name
+        
+        
     }
 }
