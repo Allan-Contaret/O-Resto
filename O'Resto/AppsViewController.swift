@@ -24,8 +24,30 @@ class AppsViewController: UIViewController {
 
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "segueTest") {
+            self.downloadJsonWithUrl()
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let svc = segue.destination as! RestaurantViewController;
+                svc.toPass = "\(restaurantsArray[indexPath.row].name)"
+            }
+            restaurantsArray.removeAll()
+            
+        }
+    }
+    
     func downloadJsonWithUrl(){
-        
+
         let urlString = "http://www.gregoirejoncour.xyz/restaurant"
         let url = NSURL(string: urlString)
         URLSession.shared.dataTask(with:(url as? URL)!, completionHandler: {(data, response, error) -> Void in
@@ -36,7 +58,6 @@ class AppsViewController: UIViewController {
                         if let restaurantDict = restaurant as? NSDictionary {
                             let nameStr: String = {
                                 if let name = restaurantDict.value(forKey: "name") {
-                                    print(name)
                                     return name as! String
                                 }
                                 return "no"
@@ -62,7 +83,15 @@ class AppsViewController: UIViewController {
                                 return "no"
                             }()
                             
-                            self.restaurantsArray.append(Restaurant(name: nameStr, address: addressStr, imageName: imageStr))
+                            let idInt: Int = {
+                                if let id = restaurantDict.value(forKey: "id") {
+                                    let idd:Int = Int(id as! String)!
+                                    return idd
+                                }
+                                return 0
+                            }()
+                            
+                            self.restaurantsArray.append(Restaurant(name: nameStr, address: addressStr, imageName: imageStr, id: idInt))
                             
                             OperationQueue.main.addOperation ({
                                 self.tableView.reloadData()

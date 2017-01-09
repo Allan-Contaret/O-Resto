@@ -16,10 +16,12 @@ class RestaurantTableViewCell: UITableViewCell {
     @IBOutlet weak var restaurantImageView: UIImageView!
     
     @IBOutlet weak var restaurantNameLabel: UILabel!
+    @IBOutlet weak var restaurantInfos: UITextView!
     
     var restaurant: Restaurant! {
         didSet{
             self.updateUI()
+            
         }
     }
     func updateUI(){
@@ -45,6 +47,8 @@ class RestaurantTableViewCell: UITableViewCell {
         
         
         restaurantNameLabel.text = restaurant.name
+        print(restaurant.address)
+        restaurantInfos.text = restaurant.address
         //restaurantImageView.image = UIImage(named: "vignette_hippo")
         downloadPicTask.resume()
         

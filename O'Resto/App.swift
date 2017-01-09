@@ -12,9 +12,10 @@ struct Restaurant {
     var name: String
     var address : String
     var imageName : String
+    var id : Int
 }
 
-struct TIBRestaurants {
+/*struct TIBRestaurants {
     static func getAllRestaurants()-> [Restaurant] {
         return [
             Restaurant(name :"Hippopotamus", address :"31 Rue Marie-Andrée Lagroua Weill-Hallé, 75013 Paris", imageName : "vignette_hippo"),
@@ -22,4 +23,4 @@ struct TIBRestaurants {
             Restaurant(name: "Pataterie", address: "27 rue de la Basse Quinte Espace Pompadour, 94000 Créteil", imageName: "pataterie")
         ]
     }
-}
+}*/
