@@ -14,9 +14,13 @@ class RestaurantViewController: UIViewController {
 
     @IBOutlet weak var Label: UILabel!
     
+    
+
+    @IBOutlet weak var restaurantNav: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         Label.text = toPass
+        restaurantNav.title = toPass
         print(toPass)
         // Do any additional setup after loading the view.
     }
@@ -28,12 +32,12 @@ class RestaurantViewController: UIViewController {
     
 
     
-    // MARK: - Navigation
+    /*// MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
+    }*/
 
 }

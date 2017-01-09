@@ -11,8 +11,8 @@ import UIKit
 class AppsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
     var restaurantsArray = [Restaurant]()
-    //var apps = TIBRestaurants.getAllRestaurants()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,13 +36,12 @@ class AppsViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "segueTest") {
-            self.downloadJsonWithUrl()
+            /*restaurantsArray.removeAll()
+            self.downloadJsonWithUrl()*/
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let svc = segue.destination as! RestaurantViewController;
                 svc.toPass = "\(restaurantsArray[indexPath.row].name)"
             }
-            restaurantsArray.removeAll()
-            
         }
     }
     
@@ -119,9 +118,8 @@ extension AppsViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "AppCell") as! RestaurantTableViewCell
-        let resto = restaurantsArray[indexPath.row]
         
-        cell.restaurant = resto
+        cell.restaurant = restaurantsArray[indexPath.row]
         
         return cell
     }

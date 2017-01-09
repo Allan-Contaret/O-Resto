@@ -138,7 +138,7 @@
             </objects>
             <point key="canvasLocation" x="2076" y="136.28185907046478"/>
         </scene>
-        <!--Restaurant View Controller-->
+        <!--Title-->
         <scene sceneID="3Mn-Ol-72n">
             <objects>
                 <viewController id="f2J-5l-NdJ" customClass="RestaurantViewController" customModule="O_Resto" customModuleProvider="target" sceneMemberID="viewController">
@@ -160,31 +160,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="k6J-r5-Uav"/>
                     <connections>
                         <outlet property="Label" destination="6GD-6u-0vX" id="O4H-th-eFb"/>
+                        <outlet property="restaurantNav" destination="k6J-r5-Uav" id="swL-jk-vEo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AWs-JH-ik8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2860" y="130.88455772113943"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="p7y-eJ-yqV">
-            <objects>
-                <viewController id="L7g-o2-H8T" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="c5X-jY-3eM"/>
-                        <viewControllerLayoutGuide type="bottom" id="asb-EB-Eed"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BJJ-CS-jhN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ATe-8p-Pmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4199" y="-397"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="htO-fq-at8">

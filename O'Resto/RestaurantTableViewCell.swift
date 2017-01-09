@@ -28,7 +28,7 @@ class RestaurantTableViewCell: UITableViewCell {
         
         let catPictureURL = URL(string: "\(restaurant.imageName)")!
         let session = URLSession(configuration: .default)
-        let downloadPicTask = session.dataTask(with: catPictureURL) { (data, response, error) in
+        session.dataTask(with: catPictureURL) { (data, response, error) in
             if let e = error {
                 print("Error downloading cat picture: \(e)")
             } else {
@@ -43,14 +43,14 @@ class RestaurantTableViewCell: UITableViewCell {
                     print("Couldn't get response code for some reason")
                 }
             }
-        }
+        }.resume()
         
         
         restaurantNameLabel.text = restaurant.name
         print(restaurant.address)
         restaurantInfos.text = restaurant.address
         //restaurantImageView.image = UIImage(named: "vignette_hippo")
-        downloadPicTask.resume()
+        
         
     }
 }
