@@ -23,9 +23,30 @@ class RestaurantTableViewCell: UITableViewCell {
         }
     }
     func updateUI(){
-        restaurantImageView.image = UIImage(named: restaurant.imageName)
-        restaurantNameLabel.text = restaurant.name
         
+        let catPictureURL = URL(string: "\(restaurant.imageName)")!
+        let session = URLSession(configuration: .default)
+        let downloadPicTask = session.dataTask(with: catPictureURL) { (data, response, error) in
+            if let e = error {
+                print("Error downloading cat picture: \(e)")
+            } else {
+                if let res = response as? HTTPURLResponse {
+                    print("Downloaded cat picture with response code \(res.statusCode)")
+                    if let imageData = data {
+                        self.restaurantImageView.image = UIImage(data: imageData)
+                    } else {
+                        print("Couldn't get image: Image is nil")
+                    }
+                } else {
+                    print("Couldn't get response code for some reason")
+                }
+            }
+        }
+        
+        
+        restaurantNameLabel.text = restaurant.name
+        //restaurantImageView.image = UIImage(named: "vignette_hippo")
+        downloadPicTask.resume()
         
     }
 }
