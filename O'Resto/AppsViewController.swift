@@ -47,7 +47,7 @@ class AppsViewController: UIViewController {
     
     func downloadJsonWithUrl(){
 
-        let urlString = "http://www.gregoirejoncour.xyz/restaurant"
+        let urlString = "http://api.gregoirejoncour.xyz/restaurant"
         let url = NSURL(string: urlString)
         URLSession.shared.dataTask(with:(url as? URL)!, completionHandler: {(data, response, error) -> Void in
             if let parsedData = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary {
@@ -77,7 +77,7 @@ class AppsViewController: UIViewController {
                             
                             let imageStr: String = {
                                 if let image = restaurantDict.value(forKey: "image") {
-                                    return "http://www.gregoirejoncour.xyz/images/\(image)"
+                                    return "http://api.gregoirejoncour.xyz/images/\(image)"
                                 }
                                 return "no"
                             }()
