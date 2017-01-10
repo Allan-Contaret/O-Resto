@@ -13,6 +13,8 @@ class RestaurantViewController: UIViewController {
     var restaurant:Restaurant!
 
     @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
     @IBOutlet weak var restaurantNav: UINavigationItem!
     
     @IBOutlet weak var imageView: UIImageView!
@@ -21,6 +23,7 @@ class RestaurantViewController: UIViewController {
         super.viewDidLoad()
         restaurantNav.title = restaurant.name
         addressLabel.text = restaurant.address
+        descriptionTextView.text = restaurant.description
         imageView.downloadedFrom(link: restaurant.imageName)
         imageView.contentMode = UIViewContentMode.scaleAspectFill
         

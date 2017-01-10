@@ -13,6 +13,7 @@ struct Restaurant {
     var address : String
     var imageName : String
     var id : Int
+    var description : String
 }
 
 /*struct TIBRestaurants {

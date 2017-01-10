@@ -88,7 +88,14 @@ class AppsViewController: UIViewController {
                                 return 0
                             }()
                             
-                            self.restaurantsArray.append(Restaurant(name: nameStr, address: addressStr, imageName: imageStr, id: idInt))
+                            let descriptionStr: String = {
+                                if let description = restaurantDict.value(forKey: "description") {
+                                    return description as! String
+                                }
+                                return "no"
+                            }()
+                            
+                            self.restaurantsArray.append(Restaurant(name: nameStr, address: addressStr, imageName: imageStr, id: idInt, description: descriptionStr))
                             
                             OperationQueue.main.addOperation ({
                                 self.tableView.reloadData()
