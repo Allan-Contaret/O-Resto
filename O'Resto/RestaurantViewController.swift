@@ -10,18 +10,20 @@ import UIKit
 
 class RestaurantViewController: UIViewController {
 
-    var toPass:String!
+    var restaurant:Restaurant!
 
-    @IBOutlet weak var Label: UILabel!
-    
-    
-
+    @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var restaurantNav: UINavigationItem!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        Label.text = toPass
-        restaurantNav.title = toPass
-        print(toPass)
+        restaurantNav.title = restaurant.name
+        addressLabel.text = restaurant.address
+        imageView.downloadedFrom(link: restaurant.imageName)
+        imageView.contentMode = UIViewContentMode.scaleAspectFill
+        
         // Do any additional setup after loading the view.
     }
 

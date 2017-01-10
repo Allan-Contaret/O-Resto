@@ -27,7 +27,8 @@ class RestaurantTableViewCell: UITableViewCell {
     func updateUI(){
         
         restaurantImageView.downloadedFrom(link: restaurant.imageName)
-        
+        restaurantImageView.contentMode = UIViewContentMode.scaleAspectFill
+        //restaurantImageView.clipsToBounds = true
         restaurantNameLabel.text = restaurant.name
         print(restaurant.address)
         restaurantInfos.text = restaurant.address

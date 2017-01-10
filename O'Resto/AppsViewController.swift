@@ -16,7 +16,7 @@ class AppsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.downloadJsonWithUrl()
+        self.downloadJsonWithUrl(url: "http://api.gregoirejoncour.xyz/restaurant")
         tableView.dataSource = self
         tableView.estimatedRowHeight = 376
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -36,18 +36,16 @@ class AppsViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "segueTest") {
-            /*restaurantsArray.removeAll()
-            self.downloadJsonWithUrl()*/
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let svc = segue.destination as! RestaurantViewController;
-                svc.toPass = "\(restaurantsArray[indexPath.row].name)"
+                svc.restaurant = restaurantsArray[indexPath.row]
             }
         }
     }
     
-    func downloadJsonWithUrl(){
+    func downloadJsonWithUrl(url: String){
 
-        let urlString = "http://api.gregoirejoncour.xyz/restaurant"
+        let urlString = url /*"http://api.gregoirejoncour.xyz/restaurant"*/
         let url = NSURL(string: urlString)
         URLSession.shared.dataTask(with:(url as? URL)!, completionHandler: {(data, response, error) -> Void in
             if let parsedData = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary {
