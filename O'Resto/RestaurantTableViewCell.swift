@@ -26,25 +26,7 @@ class RestaurantTableViewCell: UITableViewCell {
     }
     func updateUI(){
         
-        let catPictureURL = URL(string: "\(restaurant.imageName)")!
-        let session = URLSession(configuration: .default)
-        session.dataTask(with: catPictureURL) { (data, response, error) in
-            if let e = error {
-                print("Error downloading cat picture: \(e)")
-            } else {
-                if let res = response as? HTTPURLResponse {
-                    print("Downloaded cat picture with response code \(res.statusCode)")
-                    if let imageData = data {
-                        self.restaurantImageView.image = UIImage(data: imageData)
-                    } else {
-                        print("Couldn't get image: Image is nil")
-                    }
-                } else {
-                    print("Couldn't get response code for some reason")
-                }
-            }
-        }.resume()
-        
+        restaurantImageView.downloadedFrom(link: restaurant.imageName)
         
         restaurantNameLabel.text = restaurant.name
         print(restaurant.address)
@@ -52,5 +34,26 @@ class RestaurantTableViewCell: UITableViewCell {
         //restaurantImageView.image = UIImage(named: "vignette_hippo")
         
         
+    }
+}
+
+extension UIImageView {
+    func downloadedFrom(url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
+        contentMode = mode
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard
+                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+                let data = data, error == nil,
+                let image = UIImage(data: data)
+                else { return }
+            DispatchQueue.main.async() { () -> Void in
+                self.image = image
+            }
+            }.resume()
+    }
+    func downloadedFrom(link: String, contentMode mode: UIViewContentMode = .scaleAspectFit) {
+        guard let url = URL(string: link) else { return }
+        downloadedFrom(url: url, contentMode: mode)
     }
 }
