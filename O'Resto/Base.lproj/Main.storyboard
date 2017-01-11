@@ -74,7 +74,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="376"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b6M-HW-61C" id="V4O-i3-Xs1">
-                                    <frame key="frameInset" width="375" height="376"/>
+                                    <frame key="frameInset" width="375" height="375"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table-restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="Akr-f0-2jF">
@@ -137,7 +137,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
                     <connections>
-                        <outlet property="navi" destination="HH5-c4-Xwy" id="MdB-ql-Pv5"/>
                         <outlet property="refreshRestaurantsButton" destination="RI3-ny-Xbl" id="Glw-sE-ldQ"/>
                         <outlet property="tableViewResto" destination="zZW-XP-0iW" id="ors-JA-xja"/>
                     </connections>
