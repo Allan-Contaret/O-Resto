@@ -12,6 +12,7 @@ class RestaurantsTableViewController: UITableViewController {
     
     @IBOutlet weak var tableViewResto: UITableView!
     @IBOutlet weak var refreshRestaurantsButton: UIBarButtonItem!
+    @IBOutlet weak var dateLabel: UILabel!
     
     var restaurantsArray = [Restaurant]()
     var dateFormatter = DateFormatter()
@@ -23,12 +24,13 @@ class RestaurantsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         refresher.addTarget(self, action: #selector(RestaurantsTableViewController.handleRefresh), for: .valueChanged)
-        self.dateFormatter.dateStyle = DateFormatter.Style.short
-        self.dateFormatter.timeStyle = DateFormatter.Style.long
+        //self.dateFormatter.dateStyle = DateFormatter.Style.short
+        self.dateFormatter.timeStyle = DateFormatter.Style.medium
         refreshControl = refresher
         tableViewResto!.addSubview(refreshControl!)
         //self.refreshControl?.addTarget(self, action: Selector(handleRefresh()), for: UIControlEvents.valueChanged)
         downloadJsonWithUrl(url: urlRestaurants)
+        dateLabel.text = self.dateFormatter.string(from: NSDate() as Date)
         tableViewResto.dataSource = self
         tableViewResto.estimatedRowHeight = 376
         tableViewResto.rowHeight = UITableViewAutomaticDimension
@@ -53,8 +55,9 @@ class RestaurantsTableViewController: UITableViewController {
         /*let newMovie = Restaurant(name :"Hippopotamus", address :"31 Rue Marie-Andrée Lagroua Weill-Hallé, 75013 Paris", imageName : "http://api.gregoirejoncour.xyz/images/Apricot.jpg", id : 10, description : "ddd")
         restaurantsArray.append(newMovie)*/
         let now = NSDate()
-        let updateString = "Last Updated at " + self.dateFormatter.string(from: now as Date)
+        let updateString = "mis à jour : " + self.dateFormatter.string(from: now as Date)
         print(updateString)
+        dateLabel.text = updateString
         restaurantsArray.removeAll()
         downloadJsonWithUrl(url: urlRestaurants)
         

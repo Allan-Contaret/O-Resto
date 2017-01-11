@@ -69,12 +69,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="baj-6J-VdI">
+                            <rect key="frame" x="0.0" y="64" width="375" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzg-xY-rHI">
+                                    <frame key="frameInset" minX="0.0%" width="375" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.94809460430256409" green="0.94809460430256409" blue="0.94809460430256409" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AppCell" rowHeight="376" id="b6M-HW-61C" customClass="RestaurantTableViewCell" customModule="O_Resto" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="376"/>
+                                <rect key="frame" x="0.0" y="128" width="375" height="376"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b6M-HW-61C" id="V4O-i3-Xs1">
-                                    <frame key="frameInset" width="375" height="375"/>
+                                    <frame key="frameInset" width="375" height="376"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table-restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="Akr-f0-2jF">
@@ -97,7 +112,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoA-pQ-W9u">
-                                            <frame key="frameInset" minX="15.56%" minY="59" width="240" height="128"/>
+                                            <frame key="frameInset" minX="15.44%" minY="59" width="239" height="128"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <accessibility key="accessibilityConfiguration">
                                                 <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -137,13 +152,14 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
                     <connections>
+                        <outlet property="dateLabel" destination="Qzg-xY-rHI" id="5cl-bB-vq8"/>
                         <outlet property="refreshRestaurantsButton" destination="RI3-ny-Xbl" id="Glw-sE-ldQ"/>
                         <outlet property="tableViewResto" destination="zZW-XP-0iW" id="ors-JA-xja"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IA7-Ek-M8I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1985" y="137"/>
+            <point key="canvasLocation" x="1984.8" y="136.28185907046478"/>
         </scene>
         <!--Title-->
         <scene sceneID="3Mn-Ol-72n">
