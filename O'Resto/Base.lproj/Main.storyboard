@@ -76,9 +76,9 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzg-xY-rHI">
                                     <frame key="frameInset" minX="0.0%" width="375" height="36"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="0.94809460430256409" green="0.94809460430256409" blue="0.94809460430256409" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.94809460430256409" green="0.83671624739794326" blue="0.48120181131819428" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" red="0.38159054487179489" green="0.086477394712333303" blue="0.032769549603047413" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -130,6 +130,7 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="Akr-f0-2jF" secondAttribute="trailing" id="y1z-7F-Xko"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.97196037544762537" blue="0.7328144465626989" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                 <connections>
                                     <outlet property="restaurantImageView" destination="Akr-f0-2jF" id="VhH-Vl-7lu"/>

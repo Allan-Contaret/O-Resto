@@ -30,7 +30,7 @@ class RestaurantsTableViewController: UITableViewController {
         tableViewResto!.addSubview(refreshControl!)
         //self.refreshControl?.addTarget(self, action: Selector(handleRefresh()), for: UIControlEvents.valueChanged)
         downloadJsonWithUrl(url: urlRestaurants)
-        dateLabel.text = self.dateFormatter.string(from: NSDate() as Date)
+        dateLabel.text = "mis à jour : " + self.dateFormatter.string(from: NSDate() as Date)
         tableViewResto.dataSource = self
         tableViewResto.estimatedRowHeight = 376
         tableViewResto.rowHeight = UITableViewAutomaticDimension
