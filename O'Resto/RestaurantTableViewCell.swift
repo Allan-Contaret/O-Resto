@@ -30,7 +30,6 @@ class RestaurantTableViewCell: UITableViewCell {
         restaurantImageView.contentMode = UIViewContentMode.scaleAspectFill
         //restaurantImageView.clipsToBounds = true
         restaurantNameLabel.text = restaurant.name
-        print(restaurant.address)
         restaurantInfos.text = restaurant.address
         //restaurantImageView.image = UIImage(named: "vignette_hippo")
         

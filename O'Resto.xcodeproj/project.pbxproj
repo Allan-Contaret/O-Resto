@@ -13,10 +13,10 @@
 		162437941DFDE71F00DA1930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162437921DFDE71F00DA1930 /* LaunchScreen.storyboard */; };
 		1624379F1DFDE71F00DA1930 /* O_RestoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624379E1DFDE71F00DA1930 /* O_RestoTests.swift */; };
 		162437AA1DFDE71F00DA1930 /* O_RestoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162437A91DFDE71F00DA1930 /* O_RestoUITests.swift */; };
-		162437BA1DFE014A00DA1930 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162437B91DFE014A00DA1930 /* AppsViewController.swift */; };
 		162437BC1DFE0C1100DA1930 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162437BB1DFE0C1100DA1930 /* App.swift */; };
 		162437BE1DFE129500DA1930 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162437BD1DFE129500DA1930 /* RestaurantTableViewCell.swift */; };
 		8B0D06C61E23DBDC00C87DE6 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D06C51E23DBDC00C87DE6 /* RestaurantViewController.swift */; };
+		8BB40D531E258BB500741E2F /* RestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB40D521E258BB500741E2F /* RestaurantsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +49,10 @@
 		162437A51DFDE71F00DA1930 /* O'RestoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "O'RestoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		162437A91DFDE71F00DA1930 /* O_RestoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = O_RestoUITests.swift; sourceTree = "<group>"; };
 		162437AB1DFDE71F00DA1930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		162437B91DFE014A00DA1930 /* AppsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsViewController.swift; sourceTree = "<group>"; };
 		162437BB1DFE0C1100DA1930 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		162437BD1DFE129500DA1930 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		8B0D06C51E23DBDC00C87DE6 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		8BB40D521E258BB500741E2F /* RestaurantsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 		162437881DFDE71F00DA1930 /* O'Resto */ = {
 			isa = PBXGroup;
 			children = (
-				162437B91DFE014A00DA1930 /* AppsViewController.swift */,
 				162437891DFDE71F00DA1930 /* AppDelegate.swift */,
 				162437BB1DFE0C1100DA1930 /* App.swift */,
 				162437BD1DFE129500DA1930 /* RestaurantTableViewCell.swift */,
@@ -112,6 +111,7 @@
 				162437921DFDE71F00DA1930 /* LaunchScreen.storyboard */,
 				162437951DFDE71F00DA1930 /* Info.plist */,
 				8B0D06C51E23DBDC00C87DE6 /* RestaurantViewController.swift */,
+				8BB40D521E258BB500741E2F /* RestaurantsTableViewController.swift */,
 			);
 			path = "O'Resto";
 			sourceTree = "<group>";
@@ -270,9 +270,9 @@
 			files = (
 				162437BE1DFE129500DA1930 /* RestaurantTableViewCell.swift in Sources */,
 				8B0D06C61E23DBDC00C87DE6 /* RestaurantViewController.swift in Sources */,
+				8BB40D531E258BB500741E2F /* RestaurantsTableViewController.swift in Sources */,
 				162437BC1DFE0C1100DA1930 /* App.swift in Sources */,
 				1624378A1DFDE71F00DA1930 /* AppDelegate.swift in Sources */,
-				162437BA1DFE014A00DA1930 /* AppsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
