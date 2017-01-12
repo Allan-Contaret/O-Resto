@@ -16,6 +16,7 @@ class RestaurantViewController: UIViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     
     @IBOutlet weak var restaurantNav: UINavigationItem!
+    @IBOutlet weak var mapView: UIImageView!
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -25,6 +26,8 @@ class RestaurantViewController: UIViewController {
         addressLabel.text = restaurant.address
         descriptionTextView.text = restaurant.description
         imageView.downloadedFrom(link: restaurant.imageName)
+        let urladdress = restaurant.address.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
+        mapView.downloadedFrom(link: "https://maps.googleapis.com/maps/api/staticmap?center=\(urladdress)&maptype=roadmap&markers=color:orange%7Clabel:R%7C\(urladdress)&zoom=16&scale=2&size=400x200&key=AIzaSyA4rAT0fdTZLNkJ5o0uaAwZ89vVPQpr_Kc")
         imageView.contentMode = UIViewContentMode.scaleAspectFill
         
         // Do any additional setup after loading the view.

@@ -87,7 +87,7 @@ class RestaurantsTableViewController: UITableViewController {
                                         let address = locationDict.value(forKey: "address")
                                         let city = locationDict.value(forKey: "city")
                                         let postalCode = locationDict.value(forKey: "postal_code")
-                                        return "\(address!) - \(city!) - \(postalCode!)"
+                                        return "\(address!), \(postalCode!) \(city!)"
                                     }
                                     return "no"
                                 }
