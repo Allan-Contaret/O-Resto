@@ -89,7 +89,7 @@
                                 <rect key="frame" x="0.0" y="128" width="375" height="376"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b6M-HW-61C" id="V4O-i3-Xs1">
-                                    <frame key="frameInset" width="375" height="376"/>
+                                    <frame key="frameInset" width="375" height="375"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table-restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="Akr-f0-2jF">
@@ -101,11 +101,11 @@
                                             </constraints>
                                         </imageView>
                                         <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gT-Mt-Cea">
-                                            <frame key="frameInset" minX="1.87%" minY="8" width="95.73%" height="24.19%"/>
+                                            <frame key="frameInset" minX="1.87%" minY="8" width="95.47%" height="23.98%"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVl-gt-nDa">
-                                                    <frame key="frameInset" minX="3.62%" minY="8" width="92.48%" height="34.57%"/>
+                                                    <frame key="frameInset" minX="3.35%" minY="8" width="92.74%" height="32.50%"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -116,7 +116,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoA-pQ-W9u">
-                                                    <frame key="frameInset" minX="3.62%" minY="45" width="92.48%" height="81.82%"/>
+                                                    <frame key="frameInset" minX="3.35%" minY="44" width="92.74%" height="81.82%"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -223,7 +223,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="text text text text text text text text text text text text text text text text text text" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GD-6u-0vX">
-                                <frame key="frameInset" minX="4.27%" minY="233" width="91.47%" height="11.75%"/>
+                                <frame key="frameInset" minX="4.27%" minY="233" width="91.47%" height="11.52%"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.13370943520434286" green="0.18898967474851591" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -261,7 +261,7 @@
             </objects>
             <point key="canvasLocation" x="2928.8000000000002" y="136.28185907046478"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Carte-->
         <scene sceneID="6UE-90-gNn">
             <objects>
                 <viewController id="A1V-MN-2Kk" customClass="MapViewController" customModule="O_Resto" customModuleProvider="target" sceneMemberID="viewController">
@@ -273,14 +273,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TOG-pQ-qMc">
+                            <webView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TOG-pQ-qMc">
                                 <frame key="frameInset"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Carte" id="AaL-lQ-l8B"/>
                     <connections>
                         <outlet property="webViewMap" destination="TOG-pQ-qMc" id="cnf-r0-qlZ"/>
                     </connections>
