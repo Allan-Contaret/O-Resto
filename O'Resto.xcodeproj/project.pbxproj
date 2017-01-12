@@ -17,6 +17,7 @@
 		162437BE1DFE129500DA1930 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162437BD1DFE129500DA1930 /* RestaurantTableViewCell.swift */; };
 		8B0D06C61E23DBDC00C87DE6 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D06C51E23DBDC00C87DE6 /* RestaurantViewController.swift */; };
 		8BB40D531E258BB500741E2F /* RestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB40D521E258BB500741E2F /* RestaurantsTableViewController.swift */; };
+		8BEAD30C1E282A61006D45B1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEAD30B1E282A61006D45B1 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		162437BD1DFE129500DA1930 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		8B0D06C51E23DBDC00C87DE6 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		8BB40D521E258BB500741E2F /* RestaurantsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewController.swift; sourceTree = "<group>"; };
+		8BEAD30B1E282A61006D45B1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				162437951DFDE71F00DA1930 /* Info.plist */,
 				8B0D06C51E23DBDC00C87DE6 /* RestaurantViewController.swift */,
 				8BB40D521E258BB500741E2F /* RestaurantsTableViewController.swift */,
+				8BEAD30B1E282A61006D45B1 /* MapViewController.swift */,
 			);
 			path = "O'Resto";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				162437BE1DFE129500DA1930 /* RestaurantTableViewCell.swift in Sources */,
+				8BEAD30C1E282A61006D45B1 /* MapViewController.swift in Sources */,
 				8B0D06C61E23DBDC00C87DE6 /* RestaurantViewController.swift in Sources */,
 				8BB40D531E258BB500741E2F /* RestaurantsTableViewController.swift in Sources */,
 				162437BC1DFE0C1100DA1930 /* App.swift in Sources */,

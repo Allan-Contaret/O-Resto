@@ -20,6 +20,10 @@ class RestaurantViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var itemMap: UIBarButtonItem!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         restaurantNav.title = restaurant.name
@@ -40,12 +44,14 @@ class RestaurantViewController: UIViewController {
     
 
     
-    /*// MARK: - Navigation
+    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }*/
+        if (segue.identifier == "segueMap") {
+            let svc = segue.destination as! MapViewController;
+            svc.address = restaurant.address
+        }
+    }
 
 }
