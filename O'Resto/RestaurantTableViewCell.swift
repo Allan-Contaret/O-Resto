@@ -28,15 +28,13 @@ class RestaurantTableViewCell: UITableViewCell {
         
         restaurantImageView.downloadedFrom(link: restaurant.imageName)
         restaurantImageView.contentMode = UIViewContentMode.scaleAspectFill
-        //restaurantImageView.clipsToBounds = true
         restaurantNameLabel.text = restaurant.name
         restaurantInfos.text = restaurant.address
-        //restaurantImageView.image = UIImage(named: "vignette_hippo")
-        
         
     }
 }
 
+// lien des images
 extension UIImageView {
     func downloadedFrom(url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
         contentMode = mode
