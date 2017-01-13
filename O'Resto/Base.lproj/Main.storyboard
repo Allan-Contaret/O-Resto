@@ -76,7 +76,7 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzg-xY-rHI">
                                     <frame key="frameInset" minX="0.0%" width="100.00%" height="100.00%"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="0.94809460430256409" green="0.83671624739794326" blue="0.48120181131819428" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.94809460430256409" green="0.94752058530241823" blue="0.86566555243066634" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="0.38159054487179489" green="0.086477394712333303" blue="0.032769549603047413" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -89,7 +89,7 @@
                                 <rect key="frame" x="0.0" y="128" width="375" height="376"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b6M-HW-61C" id="V4O-i3-Xs1">
-                                    <frame key="frameInset" width="375" height="375"/>
+                                    <frame key="frameInset" width="375" height="375.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table-restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="Akr-f0-2jF">
@@ -102,32 +102,32 @@
                                             </constraints>
                                         </imageView>
                                         <visualEffectView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y9g-1W-0EL">
-                                            <frame key="frameInset" minX="8" minY="7" height="25.54%" maxX="8"/>
+                                            <frame key="frameInset" minX="8" minY="6" height="25.71%" maxX="8"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="1mB-ug-a77">
                                                 <frame key="frameInset"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoA-pQ-W9u">
-                                                        <frame key="frameInset" minX="8" minY="52" height="26" maxX="8"/>
+                                                        <frame key="frameInset" minX="7" minY="52" height="26" maxX="8"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                         </accessibility>
-                                                        <color key="textColor" red="0.15629006410256407" green="0.047557928390154498" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" red="0.096510962041884807" green="0.096510962041884807" blue="0.096510962041884807" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         <dataDetectorType key="dataDetectorTypes" address="YES"/>
                                                     </textView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVl-gt-nDa">
-                                                        <frame key="frameInset" minX="15" minY="18" height="26" maxX="15"/>
+                                                        <frame key="frameInset" minX="15" minY="18" height="26" maxX="16"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                         </accessibility>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
-                                                        <color key="textColor" red="0.34086538461538463" green="0.067376469525257346" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -142,7 +142,7 @@
                                         <constraint firstItem="Akr-f0-2jF" firstAttribute="top" secondItem="V4O-i3-Xs1" secondAttribute="topMargin" constant="-1" id="jqJ-vd-xCP"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="1" green="0.97196037544762537" blue="0.7328144465626989" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                 <connections>
                                     <outlet property="restaurantImageView" destination="Akr-f0-2jF" id="VhH-Vl-7lu"/>
