@@ -198,6 +198,11 @@
                                             <segue destination="A1V-MN-2Kk" kind="show" identifier="segueMap" id="gBa-QS-fVv"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem title="Avis" id="AOT-cV-bAK">
+                                        <connections>
+                                            <segue destination="KA4-U3-qot" kind="show" id="jhd-qz-mzc"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TX-mT-RNl">
@@ -292,7 +297,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rd6-Qf-sPi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3781.5999999999999" y="136.28185907046478"/>
+            <point key="canvasLocation" x="3782" y="-202"/>
+        </scene>
+        <!--Votre avis anonyme-->
+        <scene sceneID="B2R-hQ-RwJ">
+            <objects>
+                <viewController id="KA4-U3-qot" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8N9-7u-dyb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ej4-a5-C2P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vXq-sC-1QZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fKc-x2-K96">
+                                <frame key="frameInset" minX="54" minY="72" height="30" maxX="16"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEQ-jJ-UXp">
+                                <frame key="frameInset" minX="16" minY="77" width="30" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Votre avis anonyme" id="idW-yu-egq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vCe-RB-Nkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3781.5999999999999" y="507.79610194902551"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QSy-dM-1zM">
