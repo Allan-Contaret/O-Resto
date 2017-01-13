@@ -214,7 +214,7 @@ class RestaurantsTableViewController: UITableViewController {
     */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "segueTest") {
+        if (segue.identifier == "segueInfos") {
             if let indexPath = self.tableViewResto.indexPathForSelectedRow {
                 let svc = segue.destination as! RestaurantViewController;
                 svc.restaurant = restaurantsArray[indexPath.row]

@@ -50,7 +50,7 @@ class RestaurantViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "segueMap") {
             let svc = segue.destination as! MapViewController;
-            svc.address = restaurant.address
+            svc.namePlace = "\(restaurant.name)+\(restaurant.address)"
         }
     }
 

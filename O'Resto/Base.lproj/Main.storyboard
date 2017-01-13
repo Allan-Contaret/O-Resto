@@ -147,7 +147,7 @@
                                     <outlet property="restaurantImageView" destination="Akr-f0-2jF" id="VhH-Vl-7lu"/>
                                     <outlet property="restaurantInfos" destination="eoA-pQ-W9u" id="yjJ-cN-di7"/>
                                     <outlet property="restaurantNameLabel" destination="kVl-gt-nDa" id="FRw-FB-TRa"/>
-                                    <segue destination="f2J-5l-NdJ" kind="show" identifier="segueTest" id="336-bD-az0"/>
+                                    <segue destination="f2J-5l-NdJ" kind="show" identifier="segueInfos" id="336-bD-az0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -10,13 +10,13 @@ import UIKit
 
 class MapViewController: UIViewController {
     
-    var address:String!
+    var namePlace:String!
     
     @IBOutlet weak var webViewMap: UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let q = address.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
+        let q = namePlace.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
         /*webViewMap.loadHTMLString("<html><body style='margin:0; padding:0;'><iframe style='width:100%; height:100%; border:none;' src='https://www.google.com/maps/embed/v1/place?q=\(q)&zoom=17&key=AIzaSyD4iE2xVSpkLLOXoyqT-RuPwURN3ddScAI'></iframe></body></html>", baseURL: nil)*/
         webViewMap.loadRequest(URLRequest(url: NSURL(string: "https://www.google.com/maps/place/\(q)") as! URL))
         // Do any additional setup after loading the view.
